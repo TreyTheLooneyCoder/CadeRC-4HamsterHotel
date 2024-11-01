@@ -13,30 +13,30 @@
 <body>
 
     <!-- Navbar -->
-    <div class="container-fluid bg-Midnight ">
+    <div class="container-fluid bg-Midnight d-none d-md-block">
         <div class="row">
             <div class="col">
                 <ul class="nav justify-content-center">
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link active c-E5FEFF" aria-current="page" href="#">Overview</a>
+                        <a class="nav-link active c-E5FEFF" aria-current="page" href="#go-to-overview">Overview</a>
                     </li>
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link c-E5FEFF" href="#">Rooms</a>
+                        <a class="nav-link c-E5FEFF" href="#go-to-rooms">Rooms</a>
                     </li>
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link c-E5FEFF" href="#">Packages</a>
+                        <a class="nav-link c-E5FEFF" href="#go-to-packages">Packages</a>
                     </li>
                     <li class="nav-item">
                         <img src="./assets/Logo.png" alt="This is the company logo">
                     </li>
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link c-E5FEFF" href="#">Amenities</a>
+                        <a class="nav-link c-E5FEFF" href="#go-to-amenities">Amenities</a>
                     </li>
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link c-E5FEFF" href="#">Contact</a>
+                        <a class="nav-link c-E5FEFF" href="#go-to-contact">Contact</a>
                     </li>
                     <li class="nav-item d-flex flex-column justify-content-end">
-                        <a class="nav-link c-E5FEFF " aria-disabled="true">
+                        <a class="nav-link c-E5FEFF " href="#go-to-reserve" aria-disabled="true">
                             <span class="border ps-1 pe-1">Reserve</span>
                         </a>
                     </li>
@@ -44,7 +44,42 @@
             </div>
         </div>
     </div>
-
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top d-md-none">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">La petite maison Nav</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#go-to-overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#go-to-rooms">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#go-to-packages">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#go-to-amenities">Amenities</a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-end">
+                    <a class="nav-link c-E5FEFF" href="#go-to-contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#go-to-reserve">Reserve</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <!-- Wheel Of Luxury -->
     <div class="section center-this">
@@ -57,7 +92,7 @@
 
 
     <!-- Welcome -->
-    <div class="container PushDownMore">
+    <div class="container PushDownMore" id="go-to-overview">
         <div class="row center-this">
             <div class="col-lg-6 d-none d-lg-block">
                 <img class="hamsterHomeSize" src="./assets/hamsterhomejpg.jpg" alt="Hamster eats healthy">
@@ -99,7 +134,7 @@
     <div class="container-fluid cards-bg d-flex justify-content-center PushDownMore">
         <div class="row">
             <div class="col">
-                <h1 class="c-E5FEFF">Our Rooms</h1>
+                <h1 class="c-E5FEFF"  id="go-to-rooms">Our Rooms</h1>
             </div>
 
             <div class="row">
@@ -176,7 +211,7 @@
     <!-- Packages -->
     <div class="container PushDownMore ">
         <div class="row">
-            <h1 class=""> Packages </h1>
+            <h1 class="col" id="go-to-packages"> Packages </h1>
         </div>
         <div class="row push-over2">
             <div class="col-6">
@@ -223,7 +258,7 @@
     <!-- Amenities -->
     <div class="container-fluid Amenities-bg PushDownMore">
         <div class="row">
-            <h1 class="c-E5FEFF">Amenities</h1>
+            <h1 class="c-E5FEFF" id="go-to-amenities">Amenities</h1>
         </div>
 
         <div class="row">
@@ -311,7 +346,7 @@
     <div class="big-container PushDownMore">
         <div class="container bg-Midnight">
             <div class="row PushBtmDown">
-                <h1 class="c-E5FEFF">Reserve a Room</h1>
+                <h1 class="c-E5FEFF" id="go-to-reserve">Reserve a Room</h1>
             </div>
             <div class="row">
                 
@@ -357,7 +392,7 @@
 
 
     <!-- Footer -->
-    <div class="container-fluid bg-Midnight">
+    <div class="container-fluid bg-Midnight" id="go-to-contact">
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <img class="footer-Logo" src="./assets/Logo.png" alt="Logo but at the bottom">
